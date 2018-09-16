@@ -4,6 +4,12 @@
 
 }
 
+#logo{
+  background-color: #DC9433;
+  color: white;
+  margin-left: 5px;
+}
+
 body{
   background-color: lightgrey;
 }
