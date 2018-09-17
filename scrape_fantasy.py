@@ -67,9 +67,6 @@ def  scrape_nba_fantasy():
 
         nba['Players']= players
 
-    # browser.quit()
-
-    print("lo mas duro")
 
     # return Results
     return nba

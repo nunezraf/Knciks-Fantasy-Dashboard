@@ -13,7 +13,7 @@ mongo = PyMongo(app)
 
 #create route that renders index.html template and finds documents from mongo
 @app.route("/")
-def index():
+def home():
 
     #find data
     fantasy= mongo.db.fantasy.find_one()
@@ -25,7 +25,7 @@ def index():
     return render_template("index.html", fantasy=fantasy)
 
 #route that will trigger scrape functions
-# @app.route('/')
+# @app.route('/scrape')
 def scrape():
     # Run scrapped functions
     nba = scrape_fantasy.scrape_nba_fantasy()
@@ -33,13 +33,14 @@ def scrape():
     #store results into a dictionary
 
     mvp = {
-        "news_title":nba["news_title"]
-
+        "news_title":nba["news_title"],
+        "news_img":nba["news_img"],
+        "players":nba["players"],
     }
 
     #insert nba_dict into openDatabase
 
-    mongo.db.fantasy.insert_one(mvp)
+    mongo.db.fantasy.collection.insert_one(mvp)
 
     #Redirect back to home page
     return redirect("/", code=302)
