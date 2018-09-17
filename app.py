@@ -25,8 +25,8 @@ def home():
     return render_template("index.html", fantasy=fantasy)
 
 #route that will trigger scrape functions
-# @app.route('/scrape')
-def scrape():
+@app.route('/scrape')
+def index():
     # Run scrapped functions
     nba = scrape_fantasy.scrape_nba_fantasy()
 
