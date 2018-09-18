@@ -40,7 +40,7 @@ def index():
 
     #insert nba_dict into openDatabase
 
-    mongo.db.fantasy.collection.insert_one(mvp)
+    mongo.db.fantasy.insert_one(mvp)
 
     #Redirect back to home page
     return redirect("/", code=302)

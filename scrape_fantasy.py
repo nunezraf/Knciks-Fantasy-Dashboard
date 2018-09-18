@@ -59,13 +59,13 @@ def  scrape_nba_fantasy():
     top_players = soup.find_all("td", class_="player-label")
     players = []
     for a in top_players[:10]:
-    # print(a.text)
+        # print(a.text)
         player = a.text
         players.append(player)
 
         # print(players)
 
-        nba['Players']= players
+        nba['players']= players
 
 
     # return Results

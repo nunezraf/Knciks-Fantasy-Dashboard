@@ -7,7 +7,7 @@
         <!-- Bootstrap CSS -->
              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <!-- css link  -->
-          	<link rel="stylesheet" href="style.css">
+          	<link rel="stylesheet" href="../static/css/style.css">
 
             <title>NBA Fantasy Destroyer</title>
 
@@ -38,37 +38,13 @@
                                   </div>
                               </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="../template.html">Fantasy Analysis<span class="sr-only">(current)<span></a>
+                  <a class="nav-link" href="../Resources/template.html">Fantasy Analysis<span class="sr-only">(current)<span></a>
                 </li>
 
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">About<span class="sr-only">(current)<span></a>
+                  <a class="nav-link" href="../Resources/about.html">About<span class="sr-only">(current)<span></a>
+
                 </li>
-
-
-            <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Players
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Kristaps Porzinguis</a>
-                  <a class="dropdown-item" href="#">Kevin Knox</a>
-                  <a class="dropdown-item" href="#">Frank Nlikita</a>
-                  <a class="dropdown-item" href="#">Mitchell Robinson</a>
-                  <a class="dropdown-item" href="#">Tim Hardway Jr</a>
-                  <a class="dropdown-item" href="#">Mario Henzaga</a>
-                  <a class="dropdown-item" href="#">Trey Burke</a>
-                  <a class="dropdown-item" href="#">Ernes Kanter</a>
-                  <a class="dropdown-item" href="#">Joakim Noah</a>
-                  <a class="dropdown-item" href="#">Luke Kornet</a>
-                  <a class="dropdown-item" href="#">Damyean Dotson</a>
-                  <a class="dropdown-item" href="#">Lance Thomas</a>
-                  <a class="dropdown-item" href="#">Courtney Lee</a>
-                  <a class="dropdown-item" href="#">Noah Vonleh</a>
-                  <a class="dropdown-item" href="#">Ron Baker</a>
-                  <a class="dropdown-item" href="#">Emmanuel Mudiay</a>
-                </div>
-            </li> -->
           </li>
          </ul>
       </div>
@@ -76,6 +52,7 @@
 <!-- Navbar-End  -->
   <!-- body  -->
   <body>
+
       <div class="container">
               <div class="row">
                   <div class="col-sm-12">
@@ -112,11 +89,12 @@
 
                     <!-- test for card -->
                       <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../Resources/nba.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="{{fantasy.news_img}}" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
-                          <p class="card-text">{{mvp.news_title}}</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <p class="card-text">{{fantasy.news_title}}</p>
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                           <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Forecast!</a></p>
                         </div>
                     </div>
 
@@ -124,7 +102,7 @@
                 </div>
               <div class="col-md-4">
                 <h3>Top Fantasy Players</h3>
-                <p><a href="/scrape"></a>{{nba.players}}</p>
+                <p><a href="#"></a>{{fantasy.players}}</p>
               </div>
 
                 <div class="col-md-4">
