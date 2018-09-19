@@ -8,13 +8,15 @@
      border-top: 5px black;
      /*border-top-color: black;*/
      bottom: 0;
-     position: fixed;
+     position: absolute;
      left: 0;
      bottom: 0;
      width: 100%;
      background-color: grey;
      color: white;
      text-align: center;
-     height: 0;
+     height: 2em;
 
    }
+
+   

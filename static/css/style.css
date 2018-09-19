@@ -1,17 +1,13 @@
-.container {
 
-
-
-}
 
 #logo{
-  background-color: #DC9433;
+  background-color: orange;
   color: white;
   margin-left: 5px;
 }
 
 body{
-  background-color: lightgrey;
+  /* background-color: #001f3f; */
 }
 
 #banner-pic
@@ -27,23 +23,54 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 
 .footer {
    border-top: 5px black;
    /*border-top-color: black;*/
    bottom: 0;
-   position: static;
+   position: relative;
    left: 0;
    bottom: 0;
    width: 100%;
    background-color: grey;
    color: white;
    text-align: center;
-   height: 3em;
+   height: 40px;
 
  }
 /* .col-md-4{
   background-color: lightgrey;
 } */
+
+#parallax{
+  background-image: url("../608145.jpg");
+  /* background-color: red; */
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  /* opacity: .5; */
+
+}
+
+#parallax1{
+  background-image: url("../9996801.jpg");
+  /* background-color: red; */
+  min-height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  /* opacity: 1; */
+
+}
+#parallax2{
+  background-image: url("../leaguev3.jpeg");
+  /* background-color: red; */
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  /* opacity: .5; */
+}
