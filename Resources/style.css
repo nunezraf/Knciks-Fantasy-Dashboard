@@ -8,15 +8,14 @@
      border-top: 5px black;
      /*border-top-color: black;*/
      bottom: 0;
-     position: absolute;
+     position: relative;
      left: 0;
      bottom: 0;
      width: 100%;
      background-color: grey;
      color: white;
      text-align: center;
-     height: 2em;
+     height: 40px;
+     margin-top: 10px;
 
    }
-
-   
